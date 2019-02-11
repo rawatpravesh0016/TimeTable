@@ -1,0 +1,336 @@
+body
+{
+	background:#ffffff;
+	color:#000;
+	font-family:Arial;
+	font-size:14px;
+	margin:0;
+	min-width:960px;
+}
+
+a
+{
+	outline:none;
+}
+
+img
+{
+	border:none;
+}
+
+/*____________________________________ form _________________________________________*/
+
+ol, ul 
+{
+  list-style: none;
+}
+
+table 
+{
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.register 
+{
+  margin: 0 auto;
+  margin-top:90px;
+  /*margin-bottom:20px;*/
+  padding: 30px;
+  width: 500px;
+  background:#f4f5f7;
+  border-radius: 3px;
+  color:black;  
+}
+
+.register > sup
+{
+font-size: 15px; 
+color: red; 
+}
+
+input,textarea 
+{ 
+  background-color: white;  
+}
+
+.register-input 
+{
+  display: block;
+  width: 60%;
+  height: 30px;
+  font-weight: 500;
+  font-size: 14px;
+  border: 1px solid rgb(229, 229, 229);
+  margin-top: 5px;
+  margin-left:100px;
+  margin-right:50px;
+  background-color: white;
+  color: black;
+}
+
+.register-textarea 
+{
+  display: block;
+  width: 80%;
+  height: 85px;
+  font-weight: 500;
+  font-size: 14px;
+  background: white;
+  border: 1px solid rgb(229, 229, 229);
+  margin-top: 5px;
+  margin-left:50px;
+  margin-right:50px;
+}
+
+
+.register-button 
+{
+  display: block;
+  width: 30%;
+  height: 35px;
+  margin-top: 30px;
+  margin-left: 135px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  background: #fcfcfc;
+  border: 1px solid rgb(229, 229, 229);
+  color:white;
+  border-color: #d8d8d8 #d1d1d1 #c3c3c3;
+  border-radius: 2px;
+  background:#528cea;
+  cursor: pointer; 
+}
+
+/*-------------------------- end form -------------------------------*/
+
+/*_______________________________Starting of header____________________________________*/
+#header{
+	background:url(../images/bg-header.gif) repeat-x;
+	height:auto;
+	overflow:hidden;
+	position:relative;
+	
+}
+
+#header div#section{
+	height:auto;
+	margin:0 auto;
+	width:1200px;
+	float:left;
+	margin-left:20px;
+	margin-top:15px;
+	
+}
+#header div#section div{
+	float:left;
+	
+}
+#header div#section div a{
+	display:block;
+}
+#header div#section span{
+	color:skyblue;
+	float:left;
+	font-size:32px;
+	margin-left:190px;
+	padding-right:10px;
+	margin-top:7px;
+	width:auto;
+}
+
+#menu{
+	width: 100%;
+	margin: 0;
+	padding: 10px 0 0 0;
+	list-style: none;  
+	background: #111;
+	
+}
+
+#menu li{
+	float: left;
+	padding: 0 0 10px 0;
+	position: relative;
+}
+
+#menu a{
+	float: left;
+	height: 25px;
+	padding: 0 25px;
+	color: #999;
+	text-transform: uppercase;
+	font: bold 12px/25px Arial, Helvetica;
+	text-decoration: none;
+	text-shadow: 0 1px 0 #000;
+}
+
+#menu li:hover > a{
+	color: #fafafa;
+}
+
+*html #menu li a:hover{ /* IE6 */
+	color: #fafafa;
+}
+
+#menu li:hover > ul{
+	display: block;
+}
+
+/* Sub-menu */
+
+#menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;    
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    z-index: 99999;    
+    background: #444;
+    background: -moz-linear-gradient(#444, #111);
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #111),color-stop(1, #444));
+    background: -webkit-linear-gradient(#444, #111);    
+    background: -o-linear-gradient(#444, #111);	
+    background: -ms-linear-gradient(#444, #111);	
+    background: linear-gradient(#444, #111);	
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#menu ul li{
+    float: none;
+    margin: 0;
+    padding: 0;
+    display: block;  
+    -moz-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+    -webkit-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+    box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+}
+
+#menu ul li:last-child{   
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;    
+}
+
+#menu ul a{    
+    padding: 10px;
+    height: auto;
+    line-height: 1;
+    display: block;
+    white-space: nowrap;
+    float: none;
+    text-transform: none;
+}
+
+#menu ul a:hover{
+        background: #0186ba;
+	background: -moz-linear-gradient(#04acec,  #0186ba);	
+	background: -webkit-gradient(linear, left top, left bottom, from(#04acec), to(#0186ba));
+	background: -webkit-linear-gradient(#04acec,  #0186ba);
+	background: -o-linear-gradient(#04acec,  #0186ba);
+	background: -ms-linear-gradient(#04acec,  #0186ba);
+	background: linear-gradient(#04acec,  #0186ba);
+}
+
+#menu ul li:first-child a:after{
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: -8px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid #444;
+}
+
+#menu ul li:first-child a:hover:after{
+    border-bottom-color: #04acec; 
+}
+
+#menu ul li:last-child a{
+    -moz-border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+}
+
+/* Clear floated elements */
+#menu:after{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+/*____________________________________End of Header_________________________________*/
+
+/*_____________________________________Starting of content Area________________________*/
+
+#content 
+{
+	overflow:hidden;
+	min-height:488px;
+	background: white;
+}
+
+
+/*__________________________________End of content Area__________________________*/
+
+/*__________________________________startinfooter Area___________________________________*/
+
+#footer
+{
+	background:url(../images/bg-header.gif) repeat-x;
+	min-height:100px;
+	width:100%;
+}
+
+#footer div
+{
+	font-size:14px;
+	margin:0 auto;
+	padding-top:25px;
+	width:950px;
+}
+
+#footer div div#connect{
+	float:left;
+	padding:0;
+	width:250px;
+}
+#footer div div#connect a{
+	display:inline-block;
+	padding-right:10px;
+}
+
+#footer div div.section
+{
+	float:right;
+	padding:0;
+	width:500px;
+}
+
+#footer a
+{
+	color:#6886A0;
+	text-decoration:none;
+}
+
+#footer a:hover
+{
+	color:yellow;
+}
+
+#footer div div.section p
+{
+	color:#6886A0;
+	text-align:right;
+}
+
+/*_____________________________End of footer______________________________________*/

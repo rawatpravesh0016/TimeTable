@@ -1,0 +1,202 @@
+body
+{
+	background:#fff url(../images/background.gif) repeat-x center 187px;
+	color:white;
+	font-family:Arial;
+	font-size:14px;
+	margin:0;
+	min-width:960px;
+}
+
+#page
+{
+	background:url(../images/bg2.jpg) no-repeat center 180px;
+	height:100%;
+	width:100%;
+}
+
+/*_______________________________Starting of header____________________________________*/
+#header{
+	background:url(../images/bg-header.gif) repeat-x;
+	height:auto;
+	overflow:hidden;
+	position:relative;
+	
+}
+
+#header div#section{
+	height:auto;
+	margin:0 auto;
+	width:1200px;
+	float:left;
+	margin-left:20px;
+	margin-top:15px;
+	
+}
+#header div#section div{
+	float:left;
+	
+}
+#header div#section div a{
+	display:block;
+}
+#header div#section span{
+	color:skyblue;
+	float:left;
+	font-size:32px;
+	margin-left:190px;
+	padding-right:10px;
+	margin-top:7px;
+	width:auto;
+}
+
+#menu{
+	width: 100%;
+	margin: 0;
+	padding: 10px 0 0 0;
+	list-style: none;  
+	background: #111;
+	
+}
+
+#menu li{
+	float: left;
+	padding: 0 0 10px 0;
+	position: relative;
+}
+
+#menu a{
+	float: left;
+	height: 25px;
+	padding: 0 25px;
+	color: #999;
+	text-transform: uppercase;
+	font: bold 12px/25px Arial, Helvetica;
+	text-decoration: none;
+	text-shadow: 0 1px 0 #000;
+}
+
+/* Clear floated elements */
+#menu:after{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+/*____________________________________End of Header_________________________________*/
+
+/*_____________________________________Starting of content Area________________________*/
+#content {
+	margin:-0 auto 0;
+	/* min-height:174px; */
+	height: 300px;
+
+	overflow:hidden;
+	padding:0;
+	position:relative;
+	width:100%;
+	min-height:488px;
+}
+
+#login {
+	margin: 50px auto;
+	width: 300px;
+}
+
+
+form fieldset input[type="text"], input[type="password"] {
+	background-color: #e5e5e5;
+	border: none;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	color: #5a5656;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	height: 30px;
+	outline: none;
+	padding: 0px 10px;
+	width: 280px;
+	-webkit-appearance:none;
+}
+
+form fieldset input[type="submit"] {
+	background-color: #008dde;
+	border: none;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	color: #f4f4f4;
+	cursor: pointer;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	height: 30px;
+	text-transform: uppercase;
+	width: 280px;
+	-webkit-appearance:none;
+
+
+}
+
+form fieldset a 
+{
+	color: #5a5656;
+	font-size: 12px;
+}
+
+/*__________________________________End of content Area__________________________*/
+
+/*__________________________________startinfooter Area___________________________________*/
+
+#footer
+{
+	background:url(../images/bg-header.gif) repeat-x;
+	min-height:100px;
+	width:100%;
+}
+
+#footer div
+{
+	font-size:14px;
+	margin:0 auto;
+	padding-top:25px;
+	width:950px;
+}
+
+#footer div div#connect{
+	float:left;
+	padding:0;
+	width:250px;
+}
+#footer div div#connect a{
+	display:inline-block;
+	padding-right:10px;
+}
+
+#footer div div.section
+{
+	float:right;
+	padding:0;
+	width:500px;
+}
+
+#footer a
+{
+	color:#6886A0;
+	text-decoration:none;
+}
+
+#footer a:hover
+{
+	color:yellow;
+}
+
+#footer div div.section p
+{
+	color:#6886A0;
+	text-align:right;
+}
+
+/*_____________________________End of footer______________________________________*/
